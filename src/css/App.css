@@ -4,7 +4,7 @@ html, body {
     margin: 0;
     background: var(--main-colour);
     scroll-behavior: smooth; 
-    /* overflow: hidden; */
+    overflow: hidden;
 
     
 
@@ -252,31 +252,6 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 /*MOBILE */
 @media only screen and (max-width: 600px) {
     html {
-        width: 100vw !important;
-    }
-    .contentwrap{
-        width: 100%;
-    }
-
-    .wrapper {
-        margin-top: 20vh;
-    }
-
-    .cont {
-        background: none;
-        padding-bottom: 25px;
-    }
-
-
-    #contactScroll{
-        display: none;
-    }
-
-    #expScroll{
-        display: none;
-    }
-
-    #qualScroll{
-        display: none;
+        overflow: auto;
     }
 }

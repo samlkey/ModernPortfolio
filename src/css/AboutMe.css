@@ -1,9 +1,9 @@
-.aboutMe{
+.aboutMe {
     height: 100vh;
     background-color: #324a5f;
 }
 
-.aboutMeTitle{
+.aboutMeTitle {
     font-size: 5em;
     margin-left: 11vw;
     padding-top: 22vh;
@@ -11,38 +11,97 @@
     margin-bottom: 0;
 }
 
-.aboutMe-wrapper{
+.aboutMe-wrapper {
     display: flex;
     gap: 5%;
     width: 80vw;
-    margin: 0 auto 0 auto;
+    margin: 0 auto;
 }
 
-.left-flex{
+.left-flex {
     height: 30vh;
 }
 
-.left-content{
+.left-content {
     font-size: 2em;
     width: 40vw;
     padding-left: 3%;
 }
 
-.lang-wrapper{
+.lang-wrapper {
     padding: 13% 0 0 0;
 }
 
-.lang-wrapper p{
+.lang-wrapper p {
     font-size: 2em;
     width: 40vw;
 }
 
-.lang-wrapper h1{
+.lang-wrapper h1 {
     font-size: 5em;
     margin-bottom: 0;
     font-family: LeagueSpartan;
 }
 
-.aboutMe-wrapper div{
+.aboutMe-wrapper div {
     width: 50%;
+}
+
+/* MOBILE */
+@media only screen and (max-width: 600px) {
+    .aboutMe {
+        height: 100vh; /* Allow the section height to adjust based on content */
+        padding: 2rem; /* Add padding for better spacing */
+    }
+
+    .aboutMeTitle {
+        font-size: 3em; /* Reduce title font size for smaller screens */
+        margin-left: 5vw; /* Adjust margin for better centering */
+        padding-top: 10vh; /* Reduce padding for mobile */
+    }
+
+    .aboutMe-wrapper {
+        flex-direction: column; /* Stack elements vertically on mobile */
+        gap: 2rem; /* Adjust gap for smaller screens */
+        width: 100%; /* Full width for mobile */
+    }
+
+    .left-flex {
+        height: auto; /* Allow height to adjust based on content */
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 11%;
+    }
+
+    .left-flex h1{
+        font-size: 3em;
+        text-align: center;
+        margin: 0;
+        padding-top: 10%;
+    }
+
+    .left-content {
+        font-size: 1.5em; /* Reduce font size for mobile */
+        width: 100%; /* Full width for mobile */
+        padding-left: 0; /* Remove left padding */
+        text-align: center; /* Center text for better mobile experience */
+    }
+
+    .lang-wrapper {
+        padding: 3% 0 10% 0; /* Reduce top padding */
+    }
+
+    .lang-wrapper p {
+        font-size: 1.5em; /* Reduce font size for mobile */
+        width: 100%; /* Full width for mobile */
+        text-align: center; /* Center text for better mobile experience */
+    }
+
+    .lang-wrapper h1 {
+        font-size: 3em; /* Reduce font size for mobile */
+        text-align: center; /* Center title for mobile */
+    }
+
+    .aboutMe-wrapper div {
+        width: 100%; /* Full width for mobile */
+    }
 }

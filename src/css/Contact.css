@@ -1,102 +1,158 @@
-#contactScroll{
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#contactScroll {
+    height: 100vh; /* Use full viewport height */
+    display: flex; /* Flexbox for centering content */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
 }
 
 .conTitle {
-    text-align: center;
-    font-size: 4em;
-    font-weight: bold;
-    margin-bottom: 0;
-    font-family: LeagueSpartan;
-    
+    text-align: center; /* Center title text */
+    font-size: 4em; /* Title font size */
+    font-weight: bold; /* Bold title */
+    margin-bottom: 0; /* No bottom margin */
+    font-family: LeagueSpartan; /* Font family for title */
 }
 
-.contactContent{
-    background-color: var(--main-colour);
-    width: 100%;
+.contactContent {
+    background-color: var(--main-colour); /* Background color for contact content */
+    width: 100%; /* Full width */
 }
-
 
 .contact {
-    text-align: center;
+    text-align: center; /* Center text in contact */
 }
 
 .contact p {
-    font-size: 2em;
-    width: 60%;
-    margin: 0 auto 0 auto;
-    margin-bottom: 3%;
+    font-size: 2em; /* Paragraph font size */
+    width: 60%; /* Width for paragraph */
+    margin: 0 auto; /* Center paragraph */
+    margin-bottom: 3%; /* Bottom margin */
 }
 
 .contact form {
-    font-size: 10px;
-    width: 50vw;
-    margin: 0 auto 0 auto;
-    padding-bottom: 2%;
+    font-size: 10px; /* Base font size for form */
+    width: 50vw; /* Form width */
+    margin: 0 auto; /* Center form */
+    padding-bottom: 2%; /* Bottom padding */
 }
 
-.inputTag{
-    display: flex;
-    text-align: left;
-    width: 50vw;
-    gap: 2%;
-    margin-bottom: 2vh;
+.inputTag {
+    display: flex; /* Flexbox for input tag */
+    text-align: left; /* Align text left */
+    width: 50vw; /* Input tag width */
+    gap: 2%; /* Space between elements */
+    margin-bottom: 2vh; /* Bottom margin */
 }
 
-.inputTag p{
-    margin: 0;
-    width: 50%;
-    font-size: 20px;
-    padding-left: 1%;
-    color: grey;
+.inputTag p {
+    margin: 0; /* No margin */
+    width: 50%; /* Width for label */
+    font-size: 20px; /* Font size for label */
+    padding-left: 1%; /* Left padding */
+    color: grey; /* Text color */
 }
 
-.subjectFlex{
-    display: flex;
-    justify-content: center;
-    gap: 2%;
-    margin-bottom: 5vh;
+.subjectFlex {
+    display: flex; /* Flexbox for subject input */
+    justify-content: center; /* Center content */
+    gap: 2%; /* Space between elements */
+    margin-bottom: 5vh; /* Bottom margin */
 }
 
-.subjectFlex input{
-    border: 0; 
-    padding: 10px; 
-    border-bottom: 1px solid #ccc;
-    background-color: #2b3f57;
-    color: white;
-    font-weight: bold;
-    font-size: 15px;
-    outline:none;
-    width: 100%;
+.subjectFlex input {
+    border: 0; /* No border */
+    padding: 10px; /* Padding */
+    border-bottom: 1px solid #ccc; /* Bottom border */
+    background-color: #2b3f57; /* Background color */
+    color: white; /* Text color */
+    font-weight: bold; /* Bold text */
+    font-size: 15px; /* Font size */
+    outline: none; /* No outline */
+    width: 100%; /* Full width */
 }
 
 .submit {
-    font-size: 15px; 
-    border: 1px solid silver;
-    width: 15vw;
-    height: 5vh;
-    font-size: 15px;
-    border: 1px solid #ccc;
-    background-color: #2b3f57;
-    color: white;
-    margin-top: 5vh;
-    font-weight: bold;
+    font-size: 15px; /* Button font size */
+    border: 1px solid silver; /* Border */
+    width: 15vw; /* Button width */
+    height: 5vh; /* Button height */
+    background-color: #2b3f57; /* Background color */
+    color: white; /* Text color */
+    margin-top: 5vh; /* Top margin */
+    font-weight: bold; /* Bold text */
 }
 
-form textarea{
-    background-color: #2b3f57;
-    resize: none;
-    border: 0; 
-    border-bottom: 1px solid #ccc;   
-    width: 100%;
-    outline:none;
-    font-weight: bold;
-    font-size: 15px;
-    color: white;
-    padding: 7px; 
-    height: 8vh;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+form textarea {
+    background-color: #2b3f57; /* Background color for textarea */
+    resize: none; /* Disable resize */
+    border: 0; /* No border */
+    border-bottom: 1px solid #ccc; /* Bottom border */
+    width: 100%; /* Full width */
+    outline: none; /* No outline */
+    font-weight: bold; /* Bold text */
+    font-size: 15px; /* Font size */
+    color: white; /* Text color */
+    padding: 7px; /* Padding */
+    height: 8vh; /* Height */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; /* Font family */
+}
+
+/* MOBILE */
+@media only screen and (max-width: 600px) {
+    #contactScroll {
+        height: 100vh;
+    }
+
+    .conTitle {
+        font-size: 2.5em; /* Smaller font size for title */
+        margin-top: 8vh;
+    }
+
+    .contact {
+        margin-bottom: 8vh;
+    }
+
+    .contact p {
+        font-size: 1.3em; /* Smaller font size for paragraphs */
+        width: 90%; /* Full width for paragraphs */
+    }
+
+    .contact form {
+        width: 90%; /* Increase form width for mobile */
+    }
+
+    .inputTag {
+        display: none;
+        width: 90%; /* Full width for input tags */
+    }
+
+    .inputTag p {
+        font-size: 13px; /* Smaller font size for labels */
+    }
+
+    .subjectFlex {
+        flex-direction: column; /* Stack elements vertically on mobile */
+        gap: 1rem; /* Adjust gap for stacked elements */
+        margin-bottom: 3vh;
+        margin-top: 5vh;
+    }
+
+    .subjectFlex {
+        width: 85vw;
+    }
+
+    .subjectFlex input {
+        font-size: 14px; /* Smaller font size for input */
+    }
+
+    .submit {
+        width: 80%; /* Wider button on mobile */
+        font-size: 14px; /* Smaller font size for button */
+    }
+
+    form textarea {
+        height: 6vh; /* Adjust textarea height for mobile */
+        font-size: 14px; /* Smaller font size for textarea */
+        width: 80vw;
+    }
 }

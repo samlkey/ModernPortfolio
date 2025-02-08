@@ -1,78 +1,125 @@
 .footer {
-    height: 100vh;
+    height: 100vh; /* Use viewport height for the footer */
     background-color: #324a5f;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.footerContent{
-    width: 80vw;
+.footerContent {
+    width: 80vw; /* Set width for footer content */
 }
 
-.footerTop{
+.footerTop {
     border-bottom: 1px solid #ccc;
-    padding-bottom: 15vh;
+    padding-bottom: 15vh; /* Bottom padding for footer top */
 }
 
-.topFlex{
+.topFlex {
     display: flex;
-    gap: 25%;
-    font-size: 21px;
+    gap: 25%; /* Space between items */
+    font-size: 21px; /* Font size for top flex items */
 }
 
-.footerTitle{
-    font-size: 25px;
-    font-weight: bold;
+.footerTitle {
+    font-size: 25px; /* Title font size */
+    font-weight: bold; /* Bold title */
 }
 
-.footerIcons{
+.footerIcons {
     display: flex;
-    gap: 2%;
-    width: 80vw;
-    padding-top: 3%;
+    gap: 2%; /* Space between icons */
+    width: 80vw; /* Width for footer icons */
+    padding-top: 3%; /* Top padding for icons */
 }
 
-.copyright{
-    font-size: 25px;
-    font-family: LeagueSpartan;
+.copyright {
+    font-size: 25px; /* Copyright font size */
+    font-family: LeagueSpartan; /* Font family for copyright */
 }
 
-.icons{
+.icons {
     display: flex;
-    justify-content: right;
-    gap: 3%;
-    align-items: center;
+    justify-content: flex-end; /* Align icons to the right */
+    gap: 3%; /* Space between icon elements */
+    align-items: center; /* Center align icons vertically */
 }
 
-.icons div{
-    width: 5% !important;
+.icons div {
+    width: 5% !important; /* Width for icon containers */
 }
 
-.footerIcons div{
-    width: 50%;
+.footerIcons div {
+    width: 50%; /* Width for footer icon divs */
 }
 
 .icon {
-    height: 40px;
-    width: auto;
-    border-radius: 50%;
+    height: 40px; /* Icon height */
+    width: auto; /* Icon width */
+    border-radius: 50%; /* Rounded icons */
 }
 
+/* MOBILE */
 @media only screen and (max-width: 600px) {
     .footer {
-        width: 30%;
+        height: auto; /* Allow height to adjust based on content */
+        padding: 2rem; /* Add padding for mobile */
     }
 
+    .footerContent {
+        width: 90vw; /* Increase width for mobile */
+        text-align: center; /* Center text for mobile */
+    }
+
+    .footerTop {
+        padding-bottom: 10vh; /* Reduce padding for mobile */
+    }
+
+    .topFlex {
+        flex-direction: column; /* Stack elements vertically */
+        gap: 15%; /* Adjust gap for stacked elements */
+        font-size: 18px; /* Smaller font size for mobile */
+    }
+
+    .footerTitle {
+        font-size: 20px; /* Smaller title font size for mobile */
+    }
+
+    .footerIcons {
+        flex-direction: column; /* Stack icons vertically on mobile */
+        gap: 10%; /* Adjust space between icons */
+        padding-top: 1%; /* Reduce padding for mobile */
+    }
+
+    .copyright {
+        font-size: 20px; /* Smaller copyright font size for mobile */
+    }
+
+    .icons {
+        justify-content: center; /* Center icons for mobile */
+        width: 100%; /* Full width for icons container */
+    }
+
+    .icons div {
+        width: 10%; /* Adjust icon width for mobile */
+    }
+
+    .footerIcons div {
+        width: 100%; /* Full width for footer icon divs on mobile */
+    }
+
+    .icon {
+        height: 30px; /* Smaller icon height for mobile */
+    }
 }
 
+/* Icon Animations */
 .icon:hover {
-	-webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-	        animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-        
+    -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
 .icon {
-	-webkit-animation: scale-down-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: scale-down-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    -webkit-animation: scale-down-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: scale-down-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }

@@ -1,31 +1,33 @@
-#projectScroll{
+#projectScroll {
     height: 100vh;
     background-color: #324a5f;
 }
 
-.projWrapper{
+.projWrapper {
     justify-content: center;
     align-items: center;
     height: inherit;
     display: flex;
 }
 
-.projContent{
+.projContent {
     background-color: #354e64;
     height: 70%;
     width: 83%;
     margin: 5% auto 0 auto;
     display: flex;
+    flex-wrap: wrap; /* Allow content to wrap in mobile view */
 }
 
 .projLeft {
     border-right: 1px solid white;
-    /* #ccc9dc; */
     width: 50%;
+    box-sizing: border-box; /* Include padding and border in width */
 }
 
 .projRight {
     width: 50%;
+    box-sizing: border-box; /* Include padding and border in width */
 }
 
 .projLeftContent {
@@ -35,8 +37,7 @@
     width: 100%;
 }
 
-
-.projContent p{
+.projContent p {
     width: 40%;
     margin-bottom: 10%;
     color: #ccc9dc;
@@ -54,10 +55,59 @@
     border: 1px solid silver;
     width: 18vw;
     height: 7vh;
-    font-size: 15px;
-    border: 1px solid #ccc;
     background-color: #354e64;
     color: white;
     font-weight: bold;
     border-radius: 0;
+}
+
+@media only screen and (max-width:900px){
+    .projContent {
+        flex-direction: column; /* Stack elements vertically */
+        height: auto; /* Allow height to adjust based on content */
+        padding: 1rem; /* Add padding for better spacing */
+        width: 90%; /* Make content wider for mobile */
+    }
+
+    .projLeft, .projRight {
+        width: 100%; /* Full width for mobile */
+        border-right: none; /* Remove border on mobile */
+        padding: 1rem; /* Add padding for content */
+    }
+}
+
+
+
+/* MOBILE */
+@media only screen and (max-width: 600px) {
+    .projContent {
+        flex-direction: column; /* Stack elements vertically */
+        height: auto; /* Allow height to adjust based on content */
+        padding: 1rem; /* Add padding for better spacing */
+        width: 90%; /* Make content wider for mobile */
+    }
+
+    .projLeft, .projRight {
+        width: 100%; /* Full width for mobile */
+        border-right: none; /* Remove border on mobile */
+        padding: 1rem; /* Add padding for content */
+    }
+
+    .projLeftContent, .projRightContent {
+        padding-left: 0; /* Remove left padding for mobile */
+        padding-top: 10%; /* Adjust padding for better spacing */
+        font-size: 20px; /* Reduce font size for mobile */
+    }
+
+    .projContent p {
+        width: 100%; /* Full width for mobile */
+        text-align: center; /* Center text for better mobile experience */
+    }
+
+    .projContent button {
+        width: 80%; /* Make button width responsive */
+        height: auto; /* Adjust height for mobile */
+        margin: 10px auto; /* Center button */
+        font-size: 16px; /* Slightly smaller font size for mobile */
+    }
 }

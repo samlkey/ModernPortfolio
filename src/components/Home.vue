@@ -13,9 +13,6 @@
                 <img class="home-backdrop-emoji" src="../assets/emoji.png" />
             </div>
         </div>
-        <a v-on:click="AboutMe()">
-            <img class="home-arrow" src="../assets/arrow.png">
-        </a>
     </div>
 </template>
 
@@ -23,9 +20,6 @@
     export default {
         name: "Home",
         methods : {
-            AboutMe : function(){
-                document.getElementById('aboutScroll').scrollIntoView()
-            },
             openCV : function(){
                 window.open('/files/CV.pdf')
             },

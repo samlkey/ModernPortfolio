@@ -14,7 +14,7 @@
                     </div>
 
                     <div class="subjectFlex">
-                        <input type="email" id="email" name="from_name" size="45" maxlength="35" placeholder="Enter you email"><br><br>
+                        <input type="email" id="email" name="from_name" size="45" maxlength="35" placeholder="Enter your email"><br><br>
                         <input type="text" id="subject" name="subject" size="45" maxlength="40" placeholder="Enter a subject"><br><br>
                     </div>
 
