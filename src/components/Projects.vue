@@ -9,7 +9,7 @@
                             Blah. Blah. Blah.Blah. Blah. Blah.Blah. Blah. Blah.Blah. Blah. Blah.
                             Blah. Blah. Blah.
                         </p>
-                        <button>Hi!</button>
+                        <button v-on:click="projectsRoute()">Hi</button>
                     </div>
                 </div>
                 <div class="projRight">
@@ -26,7 +26,15 @@
 
         </div>
     </div>
-
-
 </template>
+<script>
+    export default {
+        name: "Projects",
+        methods : {
+            projectsRoute : function(){
+                this.$router.push('/projects')
+            }
+        }
+    }
+</script>
 <style src="../css/Projects.css"></style>

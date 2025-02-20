@@ -25,7 +25,7 @@ export default {
     },
     methods: {
         Scroll(e){
-            if(!this.shouldScroll) return; 
+            if(!this.shouldScroll || this.currentTab == null) return; 
 
             if(e.deltaY > 0 && this.pageIndex < this.pageTags.length - 1){
                 //go down

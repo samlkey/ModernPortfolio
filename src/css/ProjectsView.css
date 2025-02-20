@@ -1,0 +1,23 @@
+.projects-content {
+    font-size: 1vh;
+    height: 100vh;
+    background-color: var(--main-colour);
+}
+
+.projects-title {
+    font-size: 2vh;
+    font-weight: bold;
+    margin: 10vh auto 10vh auto;
+    text-align: center;
+}
+
+.projects-title h1 {
+    margin-top: 20vh;
+}
+
+.projectblock-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+}
