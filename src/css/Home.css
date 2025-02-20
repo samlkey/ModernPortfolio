@@ -1,5 +1,6 @@
 .home {
-    height: 81vh; 
+    display: flex;  
+    height: 100vh; 
     justify-content: center; 
     align-items: center; 
 }
@@ -9,11 +10,12 @@
     background-color: var(--main-colour);
     justify-content: center; 
     align-items: center;
-    height: 25rem;
+    width: 100%;  
+    height: 50%; 
 }
 
 .home-backdrop-content {
-    width: 45rem;
+    width: 40rem;
     max-width: 100%; /* Ensures content is responsive */
     padding: 0 1rem; /* Adds padding for smaller screens */
 }
@@ -53,7 +55,6 @@ button {
     border: 0;
     font-size: 20px;
     margin: auto 0;
-
     transition: background-color 0.4s linear, color 0.4s linear; /* Combined transition for efficiency */
 }
   
@@ -62,10 +63,6 @@ button:hover {
     background-color: #c9c9c9;
     color: black; 
     border: #c9c9c9;  
-}
-
-.home-arrow {
-    display: none; 
 }
 
 @keyframes float {
@@ -91,6 +88,11 @@ button:hover {
         flex-direction: column;
         height: auto; /* Allow height to adjust based on content */
         padding: 2rem; /* Add padding for mobile */
+    }
+
+    .home-backdrop-content-intro {
+        text-align: center;
+        font-size: 2vh;
     }
 
     .home-backdrop-content-intro-name {
@@ -120,6 +122,5 @@ button:hover {
         width: 80%; /* Make button width responsive */
         font-size: 18px; /* Adjust font size for mobile */
         height: 45px; /* Adjust button height for mobile */
-        margin: 0 auto 0 auto; /* Center button with auto margins */
     }
 }

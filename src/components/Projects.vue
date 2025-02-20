@@ -6,20 +6,18 @@
                     <div class="projLeftContent">
                         <h1 id="scale-in-ver-bottom">View my Projects,</h1>
                         <p id="scale-in-ver-bottom">
-                            Blah. Blah. Blah.Blah. Blah. Blah.Blah. Blah. Blah.Blah. Blah. Blah.
-                            Blah. Blah. Blah.
+                            View the different projects I've been on by clicking the button below.
                         </p>
-                        <button v-on:click="projectsRoute()">Hi</button>
+                        <button v-on:click="projectsRoute()">View</button>
                     </div>
                 </div>
                 <div class="projRight">
                     <div class="projRightContent">
-                        <h1 id="scale-in-ver-bottom">View my Projects,</h1>
+                        <h1 id="scale-in-ver-bottom">GitHub,</h1>
                         <p id="scale-in-ver-bottom">
-                            Blah. Blah. Blah.Blah. Blah. Blah.Blah. Blah. Blah.Blah. Blah. Blah.
-                            Blah. Blah. Blah.
+                            Take a look at my commits and repositories on GitHub by clicking the below.
                         </p>
-                        <button>Hi!</button>
+                        <button>View</button>
                     </div>
                 </div>
             </div>

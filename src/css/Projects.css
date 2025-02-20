@@ -16,18 +16,18 @@
     width: 83%;
     margin: 5% auto 0 auto;
     display: flex;
-    flex-wrap: wrap; /* Allow content to wrap in mobile view */
+    flex-wrap: wrap;
 }
 
 .projLeft {
     border-right: 1px solid white;
     width: 50%;
-    box-sizing: border-box; /* Include padding and border in width */
+    box-sizing: border-box;
 }
 
 .projRight {
     width: 50%;
-    box-sizing: border-box; /* Include padding and border in width */
+    box-sizing: border-box;
 }
 
 .projLeftContent {
@@ -61,51 +61,51 @@
     border-radius: 0;
 }
 
-@media only screen and (max-width:900px){
+@media only screen and (max-width:900px) {
     .projContent {
-        flex-direction: column; /* Stack elements vertically */
-        height: auto; /* Allow height to adjust based on content */
-        padding: 1rem; /* Add padding for better spacing */
-        width: 90%; /* Make content wider for mobile */
+        flex-direction: column;
+        height: auto;
+        padding: 1rem;
+        width: 90%;
     }
 
     .projLeft, .projRight {
-        width: 100%; /* Full width for mobile */
-        border-right: none; /* Remove border on mobile */
-        padding: 1rem; /* Add padding for content */
+        width: 100%;
+        border-right: none;
+        padding: 1rem;
     }
 }
 
-/* MOBILE */
 @media only screen and (max-width: 600px) {
     .projContent {
-        flex-direction: column; /* Stack elements vertically */
-        height: auto; /* Allow height to adjust based on content */
-        padding: 1rem; /* Add padding for better spacing */
-        width: 90%; /* Make content wider for mobile */
+        flex-direction: column;
+        height: auto;
+        padding: 1rem;
+        width: 90%;
     }
 
     .projLeft, .projRight {
-        width: 100%; /* Full width for mobile */
-        border-right: none; /* Remove border on mobile */
-        padding: 1rem; /* Add padding for content */
+        width: 100%;
+        border-right: none;
+        padding: 1rem;
     }
 
     .projLeftContent, .projRightContent {
-        padding-left: 0; /* Remove left padding for mobile */
-        padding-top: 10%; /* Adjust padding for better spacing */
-        font-size: 20px; /* Reduce font size for mobile */
+        padding-left: 0;
+        padding-top: 10%;
+        font-size: 1.5em;
+        text-align: center;
     }
 
     .projContent p {
-        width: 100%; /* Full width for mobile */
-        text-align: center; /* Center text for better mobile experience */
+        width: 100%;
+        text-align: center;
     }
 
     .projContent button {
-        width: 80%; /* Make button width responsive */
-        height: auto; /* Adjust height for mobile */
-        margin: 10px auto; /* Center button */
-        font-size: 16px; /* Slightly smaller font size for mobile */
+        width: 80%;
+        height: auto;
+        margin: 10px auto;
+        font-size: 16px;
     }
 }

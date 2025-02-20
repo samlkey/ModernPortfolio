@@ -9,7 +9,7 @@
             </div>
 
             <div class="lang-wrapper">
-                <h1>Languages</h1>
+                <h1>Languages,</h1>
                 <p>
                     I feel I am most passionate about everything surrounding development and Software Engineering. Always thriving to utilize the newest technology, be that integrating and deploying my projects with Docker and Azure, or experimenting with the latest Web Frameworks like Blazor and React.
                 </p>
@@ -18,11 +18,8 @@
     </div>
 </template>
 <script>
-    //import LangBlock from '../shared/LangBlock.vue';
-
     export default {
         name: "AboutMe",
     }
 </script>
-
 <style src="../css/AboutMe.css" /> 

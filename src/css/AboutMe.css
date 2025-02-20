@@ -1,35 +1,30 @@
 .aboutMe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
     background-color: #324a5f;
-}
-
-.aboutMeTitle {
-    font-size: 5em;
-    margin-left: 11vw;
-    padding-top: 22vh;
-    font-family: LeagueSpartan;
-    margin-bottom: 0;
 }
 
 .aboutMe-wrapper {
     display: flex;
     gap: 5%;
     width: 80vw;
-    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
 }
 
-.left-flex {
-    height: 30vh;
+.aboutMeTitle {
+    font-size: 5em;
+    margin-left: 11vw;
+    font-family: LeagueSpartan;
+    margin-bottom: 0;
 }
 
 .left-content {
     font-size: 2em;
     width: 40vw;
     padding-left: 3%;
-}
-
-.lang-wrapper {
-    padding: 13% 0 0 0;
 }
 
 .lang-wrapper p {
@@ -47,61 +42,53 @@
     width: 50%;
 }
 
-/* MOBILE */
 @media only screen and (max-width: 600px) {
     .aboutMe {
-        height: 100vh; /* Allow the section height to adjust based on content */
-        padding: 2rem; /* Add padding for better spacing */
+        height: 100vh;
+        padding: 2rem;
     }
 
     .aboutMeTitle {
-        font-size: 3em; /* Reduce title font size for smaller screens */
-        margin-left: 5vw; /* Adjust margin for better centering */
-        padding-top: 10vh; /* Reduce padding for mobile */
+        font-size: 3em;
+        margin-left: 5vw;
     }
 
     .aboutMe-wrapper {
-        flex-direction: column; /* Stack elements vertically on mobile */
-        gap: 2rem; /* Adjust gap for smaller screens */
-        width: 100%; /* Full width for mobile */
+        flex-direction: column;
+        gap: 2rem;
+        width: 100%;
     }
 
     .left-flex {
-        height: auto; /* Allow height to adjust based on content */
+        height: auto;
         border-bottom: 1px solid #ccc;
         padding-bottom: 11%;
     }
 
-    .left-flex h1{
+    .left-flex h1 {
         font-size: 3em;
         text-align: center;
         margin: 0;
-        padding-top: 10%;
     }
 
     .left-content {
-        font-size: 1.5em; /* Reduce font size for mobile */
-        width: 100%; /* Full width for mobile */
-        padding-left: 0; /* Remove left padding */
-        text-align: center; /* Center text for better mobile experience */
-    }
-
-    .lang-wrapper {
-        padding: 3% 0 10% 0; /* Reduce top padding */
+        font-size: 1.5em;
+        width: 100%;
+        text-align: center;
     }
 
     .lang-wrapper p {
-        font-size: 1.5em; /* Reduce font size for mobile */
-        width: 100%; /* Full width for mobile */
-        text-align: center; /* Center text for better mobile experience */
+        font-size: 1.5em;
+        width: 100%;
+        text-align: center;
     }
 
     .lang-wrapper h1 {
-        font-size: 3em; /* Reduce font size for mobile */
-        text-align: center; /* Center title for mobile */
+        font-size: 3em;
+        text-align: center;
     }
 
     .aboutMe-wrapper div {
-        width: 100%; /* Full width for mobile */
+        width: 100%;
     }
 }
