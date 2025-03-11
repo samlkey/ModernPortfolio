@@ -2,16 +2,15 @@
     <div class="aboutMe" id="aboutMe">
         <div class="aboutMe-wrapper" id="slide-in-right">
             <div class="left-flex">
-                <h1 class="aboutMeTitle" id="slide-in-right">About Me,</h1>
+                <h1 class="aboutMeTitle" id="slide-in-right">About Me</h1>
                 <p class="left-content">
-                    Adventurous and determined individual with an expanding eagerness and willingness to make a substantial contribution within the workplace. At my finest when presented with a challenge, because of this I establish challenges in all aspects of my life: from participating as a course representative at university, to learning three thoroughly different musical instruments
+                    Passionate Software Engineer with expertise in full-stack development, cyber security, and server management. Experienced in modern frameworks (React, Blazor, .NET) and cloud technologies (Docker, Azure).  
                 </p>
             </div>
 
             <div class="lang-wrapper">
-                <h1>Languages,</h1>
                 <p>
-                    I feel I am most passionate about everything surrounding development and Software Engineering. Always thriving to utilize the newest technology, be that integrating and deploying my projects with Docker and Azure, or experimenting with the latest Web Frameworks like Blazor and React.
+                    Proven ability to lead projects, develop business-critical systems, and solve complex technical challenges. Always eager to learn and apply cutting-edge technologies to enhance efficiency and performance.
                 </p>
             </div>
         </div>

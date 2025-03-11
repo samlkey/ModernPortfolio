@@ -2,12 +2,9 @@
     <div class="footer" id="footerScroll">
         <div class="footerContent">
             <div class="footerTop" id="scale-in-ver-bottom-delay">
-                <p class="footerTitle">Get in Contact!</p>
-
                 <div class="topFlex">
-                    <p>sam@email.com</p> 
                     <div>
-                        <a>About Me</a>
+                        <p>About Me</p>
                         <p>Experience</p>
                         <p>Projects</p>
                         <p>My Resume</p>
@@ -16,7 +13,7 @@
             </div>
             <div class="footerIcons" id="scale-in-ver-bottom">
                 <div>
-                    <p class="copyright">@ Sam Key 2024</p>
+                    <p class="copyright">@ Sam Key 2025</p>
                 </div>
                 <div class="icons">
                     <div>

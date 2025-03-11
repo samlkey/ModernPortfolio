@@ -15,7 +15,7 @@
                     <div class="projRightContent">
                         <h1 id="scale-in-ver-bottom">GitHub,</h1>
                         <p id="scale-in-ver-bottom">
-                            Take a look at my commits and repositories on GitHub by clicking the below.
+                            Take a look at my commits and repositories on GitHub by clicking below.
                         </p>
                         <button>View</button>
                     </div>

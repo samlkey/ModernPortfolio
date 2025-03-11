@@ -7,7 +7,7 @@
 
 .conTitle {
     text-align: center; /* Center title text */
-    font-size: 4em; /* Title font size */
+    font-size: 3.5em; /* Title font size */
     font-weight: bold; /* Bold title */
     margin-bottom: 0; /* No bottom margin */
     font-family: LeagueSpartan; /* Font family for title */
@@ -23,7 +23,7 @@
 }
 
 .contact p {
-    font-size: 2em; /* Paragraph font size */
+    font-size: 1.5em; /* Paragraph font size */
     width: 60%; /* Width for paragraph */
     margin: 0 auto; /* Center paragraph */
     margin-bottom: 3%; /* Bottom margin */

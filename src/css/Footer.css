@@ -1,5 +1,5 @@
 .footer {
-    height: 100vh; /* Use viewport height for the footer */
+    height: 100vh;
     background-color: #324a5f;
     display: flex;
     align-items: center;
@@ -7,113 +7,108 @@
 }
 
 .footerContent {
-    width: 80vw; /* Set width for footer content */
+    width: 80vw;
 }
 
 .footerTop {
     border-bottom: 1px solid #ccc;
-    padding-bottom: 15vh; /* Bottom padding for footer top */
+    padding-bottom: 15vh;
 }
 
 .topFlex {
     display: flex;
-    gap: 25%; /* Space between items */
-    font-size: 21px; /* Font size for top flex items */
+    gap: 25%;
 }
 
-.footerTitle {
-    font-size: 25px; /* Title font size */
-    font-weight: bold; /* Bold title */
+.topFlex p{
+    font-weight: bold;
+    font-size: 2.5vh;
 }
+
 
 .footerIcons {
     display: flex;
-    gap: 2%; /* Space between icons */
-    width: 80vw; /* Width for footer icons */
-    padding-top: 3%; /* Top padding for icons */
+    gap: 5%;
+    width: 80vw;
+    padding-top: 3%;
 }
 
 .copyright {
-    font-size: 25px; /* Copyright font size */
-    font-family: LeagueSpartan; /* Font family for copyright */
+    font-size: 25px;
+    font-family: LeagueSpartan;
 }
 
 .icons {
     display: flex;
-    justify-content: flex-end; /* Align icons to the right */
-    gap: 3%; /* Space between icon elements */
-    align-items: center; /* Center align icons vertically */
+    justify-content: flex-end;
+    gap: 3%;
+    align-items: center;
 }
 
 .icons div {
-    width: 5% !important; /* Width for icon containers */
+    width: 5% !important;
 }
 
 .footerIcons div {
-    width: 50%; /* Width for footer icon divs */
+    width: 50%;
 }
 
 .icon {
-    height: 40px; /* Icon height */
-    width: auto; /* Icon width */
-    border-radius: 50%; /* Rounded icons */
+    height: 40px;
+    width: auto;
+    border-radius: 50%;
 }
 
-/* MOBILE */
 @media only screen and (max-width: 600px) {
     .footer {
-        height: auto; /* Allow height to adjust based on content */
-        padding: 2rem; /* Add padding for mobile */
+        height: auto;
+        padding: 2rem;
     }
 
     .footerContent {
-        width: 90vw; /* Increase width for mobile */
-        text-align: center; /* Center text for mobile */
+        width: 90vw;
+        text-align: center;
     }
 
     .footerTop {
-        padding-bottom: 10vh; /* Reduce padding for mobile */
+        padding-bottom: 5vh;
     }
 
     .topFlex {
-        flex-direction: column; /* Stack elements vertically */
-        gap: 15%; /* Adjust gap for stacked elements */
-        font-size: 18px; /* Smaller font size for mobile */
-    }
-
-    .footerTitle {
-        font-size: 20px; /* Smaller title font size for mobile */
+        flex-direction: column;
+        gap: 15%;
+        font-size: 18px;
     }
 
     .footerIcons {
-        flex-direction: column; /* Stack icons vertically on mobile */
-        gap: 10%; /* Adjust space between icons */
-        padding-top: 1%; /* Reduce padding for mobile */
+        flex-direction: column;
+        gap: 10%;
+        padding-top: 5vh;
     }
 
     .copyright {
-        font-size: 20px; /* Smaller copyright font size for mobile */
+        font-size: 20px;
     }
 
     .icons {
-        justify-content: center; /* Center icons for mobile */
-        width: 100%; /* Full width for icons container */
+        justify-content: center;
+        width: 100%;
+        gap: 15%;
     }
 
     .icons div {
-        width: 10%; /* Adjust icon width for mobile */
+        width: 10%;
     }
 
     .footerIcons div {
-        width: 100%; /* Full width for footer icon divs on mobile */
+        width: 100%;
     }
 
     .icon {
-        height: 30px; /* Smaller icon height for mobile */
+        height: 30px;
     }
 }
 
-/* Icon Animations */
 .icon:hover {
     -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
     animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;

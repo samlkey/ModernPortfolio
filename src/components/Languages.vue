@@ -3,26 +3,23 @@
         <div class="mainlang-wrapper">
             <div class="lang-left">
                 <h1 class="lang-left-title">Experience,</h1>
-                <p>
-                    blah blah blah  adipisicing elit. Numquam assumenda provident dicta quaerat? Placeat, dolores blanditiis animi officiis atque dolore eoi debitis?
-                </p>
             </div>
             <div class="lang-right">
                 <h1>Language,</h1>
-                <div>
+                <div class="lang-block">
                     <LangBlock language="JavaScript" url="https://img.icons8.com/?size=100&id=108784&format=png&color=000000"/>
-                    <LangBlock language="C#" url="../assets/c#.svg"/>
-                    <LangBlock language="JS" url="https://img.icons8.com/?size=100&id=108784&format=png&color=000000"/>           
+                    <LangBlock language="C#" url="https://img.icons8.com/color/48/c-sharp-logo.png"/>
+                    <LangBlock language="Python" url="https://img.icons8.com/color/48/python--v1.png"/>          
                 </div>
                 
-                <div>
-                    <LangBlock language="JS" url="https://img.icons8.com/?size=100&id=108784&format=png&color=000000"/>
+                <div class="lang-block">
+                    <LangBlock language="React" url="https://img.icons8.com/office/40/react.png"/>
                     <LangBlock language="JS" url="https://img.icons8.com/?size=100&id=108784&format=png&color=000000"/>
                     <LangBlock language="JS" url="https://img.icons8.com/?size=100&id=108784&format=png&color=000000"/>           
                 </div>
 
                 <h1>Frameworks,</h1>
-                <div>
+                <div class="lang-block">
                     <LangBlock language="JS" url="https://img.icons8.com/?size=100&id=108784&format=png&color=000000"/>
                     <LangBlock language="JS" url="https://img.icons8.com/?size=100&id=108784&format=png&color=000000"/>
                     <LangBlock language="JS" url="https://img.icons8.com/?size=100&id=108784&format=png&color=000000"/>           
@@ -30,7 +27,7 @@
 
                 <h1>Software,</h1>
 
-                <div>
+                <div class="lang-block">
                     <LangBlock language="JS" url="https://img.icons8.com/?size=100&id=108784&format=png&color=000000"/>
                     <LangBlock language="JS" url="https://img.icons8.com/?size=100&id=108784&format=png&color=000000"/>
                     <LangBlock language="JS" url="https://img.icons8.com/?size=100&id=108784&format=png&color=000000"/>           

@@ -4,17 +4,16 @@
 }
 
 .projWrapper {
+    display: flex;
     justify-content: center;
     align-items: center;
-    height: inherit;
-    display: flex;
+    height: 100vh;
 }
 
 .projContent {
     background-color: #354e64;
     height: 70%;
     width: 83%;
-    margin: 5% auto 0 auto;
     display: flex;
     flex-wrap: wrap;
 }
