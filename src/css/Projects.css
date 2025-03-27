@@ -20,7 +20,7 @@
 }
 
 .projLeft {
-    border-right: 1px solid white;
+    border-right: 1px solid var(--text-colour);
     width: 50%;
     box-sizing: border-box;
 }
@@ -52,7 +52,7 @@
 
 .projContent button {
     font-size: 15px; 
-    border: 1px solid silver;
+    border: 1px solid var(--text-colour);
     width: 18vw;
     height: 7vh;
     background-color: var(--primary-colour);

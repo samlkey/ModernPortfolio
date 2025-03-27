@@ -8,19 +8,12 @@
                 </p>
 
                 <form @submit.prevent="submit" method="POST" target="_blank" action="https://formspree.io/samkey726@gmail.com">
-                    <div class="inputTag">
-                        <p>Your Email</p>
-                        <p>Subject</p>
-                    </div>
 
                     <div class="subjectFlex">
                         <input type="email" id="email" name="from_name" size="45" maxlength="35" placeholder="Enter your email"><br><br>
                         <input type="text" id="subject" name="subject" size="45" maxlength="40" placeholder="Enter a subject"><br><br>
                     </div>
 
-                    <div class="inputTag">
-                        <p>Your Message</p>
-                    </div>
                     <textarea rows="10" cols="40" placeholder="Hi, we would like to consider you for a upcoming opportunity." maxlength="500" id="msg" name="message"></textarea><br><br>
                     <input type="submit" class="submit" value="Submit">
                 </form> 

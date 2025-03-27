@@ -15,9 +15,11 @@
                     <div class="projRightContent">
                         <h1 id="scale-in-ver-bottom">GitHub,</h1>
                         <p id="scale-in-ver-bottom">
-                            Take a look at my commits and repositories on GitHub by clicking below.
+                            Take a look at my commits and repositories on GitHub.
                         </p>
-                        <button>View</button>
+                        <a target="_blank" href="https://github.com/samlkey">
+                            <button>View</button>
+                        </a>
                     </div>
                 </div>
             </div>

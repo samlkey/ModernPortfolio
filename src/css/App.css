@@ -19,7 +19,7 @@ div{
 
 /*Dark and Light mode*/
 .light{
-  --main-colour: #f1f2f3;
+  --main-colour: #e8e9eb;
   --second-colour: #f9fafb;
   --primary-colour: #dde4f1;
   --secondary-colour: #d0d7e4;
@@ -31,7 +31,7 @@ div{
 }
 
 .dark{
-  --main-colour: #040506;
+  --main-colour: #151516;
   --second-colour: #0c0d0e;
   --primary-colour: #0e1521;
   --secondary-colour: #111a29;

@@ -55,7 +55,7 @@ button {
     border-radius: 10px;
     border: 0;
     font-size: 20px;
-    margin: auto 0;
+    margin: 2vh 0;
     transition: background-color 0.4s linear, color 0.4s linear; /* Combined transition for efficiency */
 }
   
