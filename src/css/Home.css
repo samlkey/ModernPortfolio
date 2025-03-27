@@ -7,7 +7,7 @@
 
 .home-backdrop {
     display: flex;
-    background-color: var(--main-colour);
+    background-color: var(--second-colour);
     justify-content: center; 
     align-items: center;
     width: 100%;  
@@ -31,11 +31,12 @@
     margin-top: 15px;
     font-size: 9vh;
     font-family: LeagueSpartan;
+    color: var(--text-colour);
 }
 
 .home-backdrop-content-intro-name h2 {
     font-size: 2rem;
-    color: #ccc9dc;
+    color: var(--text-colour);
     margin: 0;
     font-family: LeagueSpartan;
 }

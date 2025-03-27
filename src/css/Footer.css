@@ -1,6 +1,7 @@
 .footer {
     height: 100vh;
-    background-color: #324a5f;
+    background-color: var(--primary-colour);
+    color: var(--text-colour);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -11,7 +12,7 @@
 }
 
 .footerTop {
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid var(--text-colour);
     padding-bottom: 15vh;
 }
 
@@ -54,10 +55,11 @@
 }
 
 .icon {
-    height: 40px;
-    width: auto;
-    border-radius: 50%;
+    width: 2.5rem;
+    height: auto;
+    fill: var(--text-colour);
 }
+
 
 @media only screen and (max-width: 600px) {
     .footer {

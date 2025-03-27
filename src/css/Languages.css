@@ -1,6 +1,7 @@
 #languageScroll{
     height: 100vh;
     background-color: var(--main-colour);
+    color: var(--text-colour);
 }
 
 .mainlang-wrapper{

@@ -17,21 +17,6 @@
                     <LangBlock language="JS" url="https://img.icons8.com/?size=100&id=108784&format=png&color=000000"/>
                     <LangBlock language="JS" url="https://img.icons8.com/?size=100&id=108784&format=png&color=000000"/>           
                 </div>
-
-                <h1>Frameworks,</h1>
-                <div class="lang-block">
-                    <LangBlock language="JS" url="https://img.icons8.com/?size=100&id=108784&format=png&color=000000"/>
-                    <LangBlock language="JS" url="https://img.icons8.com/?size=100&id=108784&format=png&color=000000"/>
-                    <LangBlock language="JS" url="https://img.icons8.com/?size=100&id=108784&format=png&color=000000"/>           
-                </div>
-
-                <h1>Software,</h1>
-
-                <div class="lang-block">
-                    <LangBlock language="JS" url="https://img.icons8.com/?size=100&id=108784&format=png&color=000000"/>
-                    <LangBlock language="JS" url="https://img.icons8.com/?size=100&id=108784&format=png&color=000000"/>
-                    <LangBlock language="JS" url="https://img.icons8.com/?size=100&id=108784&format=png&color=000000"/>           
-                </div>
             </div>
         </div>
     </div>

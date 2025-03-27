@@ -1,6 +1,6 @@
 <template>
-    <Header></Header>
-  <div class="main" id="top">
+  <div class="main" id="top" :class="mode">
+    <Header :mode="mode" @toggle="toggle"></Header>
     <div class="content">
       <RouterView></RouterView>
     </div>
@@ -14,6 +14,11 @@
 
   export default {
     name: 'App',
+    data() {
+      return {
+        mode: 'dark'
+      }
+    },
     components: {
       Header
     },
@@ -23,7 +28,17 @@
           m => m.default
         )
         console.log(ascii + BANNER_CONTENT);
+      },
+      toggle () {
+        console.log(this.mode);
+        if (this.mode === "dark"){
+          this.mode = "light"
+        }
+        else{
+          this.mode = "dark"
+        }
       }
+
     },
     mounted(){ 
       this.showConsoleBanner(); 

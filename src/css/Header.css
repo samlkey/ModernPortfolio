@@ -20,14 +20,17 @@
     }
 
 .header-icons-moon {
-    width: 2.5rem ;
+    width: 2.5rem;
     height: auto;
+    fill: var(--text-colour);
 }
+
 
 
 .header-icons-burger{
     width: 3rem;
     height: auto;
+    stroke: var(--text-colour);
 }
 
 /* MOBILE */

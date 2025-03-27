@@ -1,6 +1,7 @@
 #projectScroll {
     height: 100vh;
-    background-color: #324a5f;
+    background-color: var(--primary-colour);
+    color: var(--text-colour);
 }
 
 .projWrapper {
@@ -11,7 +12,7 @@
 }
 
 .projContent {
-    background-color: #354e64;
+    background-color: var(--secondary-colour);
     height: 70%;
     width: 83%;
     display: flex;
@@ -39,7 +40,7 @@
 .projContent p {
     width: 40%;
     margin-bottom: 10%;
-    color: #ccc9dc;
+    color: var(--text-colour);
 }
 
 .projRightContent {
@@ -54,8 +55,8 @@
     border: 1px solid silver;
     width: 18vw;
     height: 7vh;
-    background-color: #354e64;
-    color: white;
+    background-color: var(--primary-colour);
+    color: var(--text-colour);
     font-weight: bold;
     border-radius: 0;
 }

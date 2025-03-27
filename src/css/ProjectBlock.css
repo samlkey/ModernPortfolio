@@ -3,7 +3,8 @@
     display: flex;
     flex-direction: column;
     width: 30vh;
-    height: 29vh;
+    height: auto;
+    min-width: 30vh;
     overflow: hidden;
     background-color: #ffffff0a;
 }
