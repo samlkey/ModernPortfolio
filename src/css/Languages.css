@@ -2,24 +2,29 @@
     height: 100vh;
     background-color: var(--main-colour);
     color: var(--text-colour);
-}
 
-.mainlang-wrapper{
-    height: 100%;
-    height: inherit;
-    gap: 3%;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.lang-left p{
-    font-size: 20px;
+.mainlang-wrapper {
+    width: 70vw;
+}
+
+.langwrap{
+    display: flex;
+}
+
+.langflavour{
+    margin-bottom: 10vh;
+    margin-top: 3vh;
 }
 
 .lang-right{
-    width: 50%;
+    width: 27.3vw;
     height: 80%;
-    /* background-color: #1e2f48; */
+    text-align: center;
 }
 
 .lang-right div{
@@ -28,11 +33,16 @@
 
 .lang-block{
     display: flex;
-    gap: 5vw;
+    justify-content: center;
+    gap: 1vw;
     width: 100%;
 }
 
-.lang-left-title{
+.lang-title {
+    text-align: center;
+}
+
+.lang-title h1{
     font-size: 6vh;
     margin: 0;
 }

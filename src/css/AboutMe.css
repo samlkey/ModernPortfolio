@@ -9,16 +9,14 @@
 
 .aboutMe-wrapper {
     display: flex;
-    gap: 5%;
-    width: 80vw;
+    gap: 25%;
+    width: 70vw;
     align-items: center;
     justify-content: center;
 }
 
 .aboutMeTitle {
     font-size: 5em;
-    margin-left: 11vw;
-    font-family: LeagueSpartan;
     margin-bottom: 0;
 }
 
@@ -29,13 +27,11 @@
 
 .lang-wrapper p {
     font-size: 2em;
-    width: 40vw;
 }
 
-.lang-wrapper h1 {
-    font-size: 5em;
-    margin-bottom: 0;
-    font-family: LeagueSpartan;
+.lang-wrapper svg{
+    fill: var(--text-colour);
+    height: 30vh;
 }
 
 .aboutMe-wrapper div {
@@ -90,5 +86,14 @@
 
     .aboutMe-wrapper div {
         width: 100%;
+    }
+
+    .lang-wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .lang-wrapper svg{
+        height: 20vh;
     }
 }
