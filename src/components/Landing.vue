@@ -6,10 +6,10 @@
         <Languages></Languages>
         <Projects></Projects>
         <Contact></Contact>
-        <Footer></Footer>
+        <Footer @pageChange="handlePageChange"></Footer>
       </div>
     </div>
-    <ScrollBar></ScrollBar>
+    <ScrollBar ref="childRef"></ScrollBar>
   </template>
   
   <script> 
@@ -21,7 +21,9 @@
     import Languages from './Languages.vue';
     import Projects from './Projects.vue'
     import { BANNER_CONTENT } from '../static/constants'
+    import { ref } from 'vue';
   
+    const childRef = ref(null);
     document.title = "Sam Key's Resume"
   
     export default {
@@ -41,10 +43,15 @@
             m => m.default
           )
           console.log(ascii + BANNER_CONTENT);
+        },
+        handlePageChange : function(msg){
+          console.log(childRef.value)
+          if (childRef.value) {
+            childRef.value.UpdateIndex(msg);
+          }
         }
       },
       mounted(){ 
-        this.showConsoleBanner(); 
         window.scrollTo(0, 0);
       }
     }

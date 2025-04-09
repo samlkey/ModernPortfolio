@@ -14,7 +14,7 @@ export default {
             pageIndex: 0,
             pageTags: ["top", "aboutMe", "languageScroll", "projectScroll", "contactScroll", "footerScroll"],
             animations: ["slide-in-right", "scale-in-bottom", "scale-in-ver-bottom", "tracking-in-expand"],
-            currentTab: null,
+            currentTab: "top",
             shouldScroll: true
         }
     },
@@ -23,9 +23,10 @@ export default {
            this.Scroll(e)
         })
     },
-    methods: {
+    methods: {        
         Scroll(e){
             if(!this.shouldScroll) return; 
+            if(this.currentTab == null) return;
 
             if(e.deltaY > 0 && this.pageIndex < this.pageTags.length - 1){
                 //go down
@@ -58,6 +59,7 @@ export default {
             }, 400)
         },
         HandleAnimation(c){
+            if(this.currentTab == null) return;
             let target = this.currentTab.querySelectorAll("#" + c)
             let targetDelay = this.currentTab.querySelectorAll("#" + c + "-delay")
 
@@ -84,16 +86,6 @@ export default {
         }
     }
 }
-
-
-
-
-
-
-// $("html").bind("click", function(){
-//    $("This is a click Event").appendTo( "body" );
-// });
-
 </script>
 
 <style src="../css/ScrollBar.css" />

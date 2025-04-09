@@ -120,8 +120,15 @@ button:hover {
     }
 
     button {
-        width: 80%; /* Make button width responsive */
-        font-size: 18px; /* Adjust font size for mobile */
-        height: 45px; /* Adjust button height for mobile */
+        width: 80%; 
+        font-size: 18px; 
+        height: 45px; 
+        margin: 0;
+    }
+
+    .btnwrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }

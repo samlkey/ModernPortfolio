@@ -1,28 +1,79 @@
 <template>
     <div class="projects-content">
-        <div class="projects-title">
-            <h1>/Projects</h1>
-        </div>
+        <div class="project-wrapper">
+            <div class="projects-title">
+                <h1>/Projects</h1>
+                <p>Projects I have completed in the past.</p>
+            </div>
 
-        <div class="projectblock-container">
-            <ProjectBlock projectName="WORDLE CLONE" :imageUrl="projectImage" url="https://delightful-forest-0934dfd1e.4.azurestaticapps.net/"></ProjectBlock>
+            <div class="proj-left">
+                <a target="_blank" href="https://www.linkedin.com/in/samkey726/"> 
+                    <div class="img-holder">
+                        <img src="@/assets/WordleCap.png">
+                    </div>
+                </a>
+
+                <div class="proj-name">
+                    <h1>Wordle Clone App</h1>
+                    <p>
+                        A copy of the popular game "Wordle" created using React.
+                    </p>
+
+                    <div class="proj-link">
+                        <a target="_blank" href="https://www.linkedin.com/in/samkey726/"> 
+                            <div>
+                                <p>View App</p>
+                            </div>
+                        </a>
+                        <a target="_blank" href="https://www.linkedin.com/in/samkey726/"> 
+                            <div>
+                                <p>Learn More</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>  
+            </div>
+
+            <div class="proj-left">
+                <a target="_blank" href="https://www.linkedin.com/in/samkey726/"> 
+                    <div class="img-holder">
+                        <img src="@/assets/pyClean.png">
+                    </div>
+                </a>
+
+                <div class="proj-name">
+                    <h1>PyClean</h1>
+                    <p>
+                        A python utility program used to clean unwanted files
+                        using TKinter.
+                    </p>
+
+                    <div class="proj-link">
+                        <a target="_blank" href="https://www.linkedin.com/in/samkey726/"> 
+                            <div>
+                                <p>Learn More</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>  
+            </div>
+
+
+
+
         </div>
     </div>
+    
+    <Footer @pageChange="handlePageChange"></Footer>
 </template>
 
 <script>
-import projectImage from '@/assets/Wordle_logo.png';
-import ProjectBlock from '../shared/ProjectBlock.vue';
+import Footer from '../components/Footer.vue';
 
 export default {
     name: "Projects",
     components: {
-        ProjectBlock
-    },
-    data() {
-        return {
-            projectImage // Declare projectImage in data
-        };
+        Footer
     }
 }
 </script>

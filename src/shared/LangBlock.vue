@@ -1,7 +1,7 @@
 <template>
     <div class="box">
         <img class="lngIcon" :src="url" />
-        <h1>{{ language }}</h1>
+        <!-- <h1>{{ language }}</h1> -->
     </div>
 </template>
 

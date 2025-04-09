@@ -2,31 +2,14 @@
     <div id="languageScroll">
         <div class="mainlang-wrapper">
             <div class="lang-title">
-                <h1>Experience,</h1>
+                <h1>Experience</h1>
             </div>
 
             <p class="langflavour">
-                BNLASDLASLDASLDASLBNLASDLASLDASLDASLBNLASDLASLDASLDASLBNLASDLASLDASLDASLBNLASDLASLDASLDASLBNLASDLASLDASLDASL
-                BNLASDLASLDASLDASLBNLASDLASLDASLDASLBNLASDLASLDASLDASLBNLASDLASLDASLDASLBNLASDLASLDASLDASL
+                Proven ability to lead projects, develop business-critical systems, and solve complex technical challenges. Always eager to learn and apply cutting-edge technologies to enhance efficiency and performance.
             </p>
 
-         
-
-
-
-
-
-
-
-
-
-
-
-
-
-
             <div class="langwrap">
-
                 <div class="lang-right">
                     <h1>Language</h1>
                     <div class="lang-block">

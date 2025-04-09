@@ -7,7 +7,9 @@
                     <h1>Sam Key</h1>
                     <h2>Software Developer</h2>
                 </div>
-                <button v-on:click="openCV()" download>View my Resume!</button>
+                <div class="btnwrapper">
+                    <button v-on:click="openCV()" download>View my Resume!</button>
+                </div>
             </div>
             <div>
                 <img class="home-backdrop-emoji" src="../assets/emoji.png" />

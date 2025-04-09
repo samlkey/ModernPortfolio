@@ -6,7 +6,7 @@
                     <div class="projLeftContent">
                         <h1 id="scale-in-ver-bottom">View my Projects,</h1>
                         <p id="scale-in-ver-bottom">
-                            View the different projects I've been on by clicking the button below.
+                            View the different projects by clicking the button below.
                         </p>
                         <button v-on:click="projectsRoute()">View</button>
                     </div>

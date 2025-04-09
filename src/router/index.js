@@ -7,12 +7,13 @@ const routes = [
     path: '/',
     name: 'home',
     component: Landing,
-    meta: { transition: 'slide-left' }
+    meta: { transition: 'slide-left', hideOverflow: true }
   },
   {
     path: "/projects",
     name: 'projects',
-    component: Projects
+    component: Projects,
+    meta: { hideOverflow: false }
   }
 
   //{
@@ -27,7 +28,12 @@ const routes = [
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
-  routes
+  routes,
+  // eslint-disable-next-line no-unused-vars
+  scrollBehavior(to, from, savedPosition) {
+    // Always scroll to top
+    return { top: 0 }
+  }
 })
 
 export default router

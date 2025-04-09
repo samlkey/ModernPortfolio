@@ -24,6 +24,7 @@
 .topFlex p{
     font-weight: bold;
     font-size: 2.5vh;
+    cursor: pointer;
 }
 
 

@@ -1,5 +1,5 @@
 .box {
-    background: #ffffff0a;
+    background: var(--indent-colour);
     padding: 2% 2% 2% 2%;
     border-radius: 3%;
     text-align: left;
@@ -31,3 +31,12 @@
     
 }
 
+
+@media only screen and (max-width: 600px) {
+    .box{
+        width: 80px; 
+        height: 50px; 
+    }
+
+  
+}

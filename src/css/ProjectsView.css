@@ -1,23 +1,148 @@
 .projects-content {
     font-size: 1vh;
-    height: 100vh;
     background-color: var(--main-colour);
+    display: flex;
+    justify-content: center;
+    color: var(--text-colour);
+    width: 100vw;
 }
 
 .projects-title {
-    font-size: 2vh;
+    font-size: 2.3vh;
     font-weight: bold;
-    margin: 10vh auto 10vh auto;
     text-align: center;
 }
 
 .projects-title h1 {
-    margin-top: 20vh;
+    margin: 0;
+    font-family: LeagueSpartan;
+}
+
+.projects-title p {
+    font-weight: normal;
 }
 
 .projectblock-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 5vh;
+}
+
+.project-wrapper{
+    margin-top: 20vh;
+    width: 60vw;
+}
+
+
+/*----------------------------------------------*/
+
+.img-holder{
+    background-color: var(--secondary-colour);
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.img-holder img{
+    width: 17vw;
+}
+
+.img-holder:hover{
+    transform: scale(0.9);
+    cursor: pointer;
+}
+
+.proj-left{
+    display: flex;
+    margin-left: 5vw;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+
+.proj-name{
+    left: -4rem;
+    position: relative;
+    top: 5rem;
+    height: fit-content;
+    padding: 1rem;
+    z-index: 9999999;
+    font-size: 1rem;
+    margin: 0;
+}
+
+.proj-name div{
+    border-bottom: 2px solid red;
+    width: 10vw;
+    margin-bottom: 10%;
+}
+
+.proj-name p{
+    margin-bottom: 5vh;
+    width: 20vw;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.proj-name div p{
+    margin-bottom: 2%;
+    font-size: 1vw;
+    font-weight: bold;
+}
+
+/* MOBILE */
+@media only screen and (max-width: 700px) {
+    .projects-title {
+        font-size: 1.8vh;
+    }    
+
+    .img-holder{
+        width: 200px;
+        height: 200px;
+    }
+
+    .proj-left{
+        flex-direction: column;
+        width: 80vw;
+    }
+    
+    .proj-name {
+        position: relative;
+        top: 0;
+        padding: 0;
+        left: 0;
+    }
+
+    .proj-name h1{
+        font-size: 1.5rem;
+    }
+
+    .proj-name p{
+        font-size: 1rem;
+        width: 60vw;
+        margin-bottom: 2%;
+    }
+
+    .img-holder img{
+        width: 30vw;
+    }    
+
+    .proj-link {
+        display: flex;
+        gap: 15vw;
+    }
+
+    .proj-link div p {
+        font-size: 1rem;
+    }
+
+    .project-wrapper {
+        margin-top: 18vh;
+    }
 }
