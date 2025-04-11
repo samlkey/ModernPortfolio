@@ -40,10 +40,12 @@
     })
 
     const scrollToLocation = function(loc){
+        if (isMobile()) enableScroll()
         document.getElementById(loc).scrollIntoView({ 
             behavior: "smooth", 
             block: "start" 
         });
+        if (isMobile()) emit('close')
     }
 
     const openCV = function(){
@@ -62,10 +64,8 @@
     }
 
     const enableScroll = () => {
-        const scrollY = document.body.dataset.scrollY
         document.body.classList.remove('no-scroll')
         document.body.style.top = ''
-        window.scrollTo(0, parseInt(scrollY || '0'))
         delete document.body.dataset.scrollY
     }
 

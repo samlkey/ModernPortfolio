@@ -110,9 +110,13 @@
     }
 
     .modal-icons{
-
+        padding-left: 1.5rem;
         gap: 10vw;
  
+    }
+
+    .modal-contact{
+        padding-left: 2rem;
     }
 
     svg{
