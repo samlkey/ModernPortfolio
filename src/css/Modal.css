@@ -35,9 +35,11 @@
 }
 
 .modal-links{
-    font-size: 2em;
+    font-size: 1.8em;
     padding: 1.5rem;
     border-bottom: 1px solid var(--text-colour);
+    animation: scale-in-ver-bottom 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation-delay: 0.3s;
 }
 
 .modal-links p{
@@ -48,6 +50,9 @@
     font-size: 2em;
     padding-left: 1.5rem;
     padding-top: 1.5rem;
+
+    animation: scale-in-ver-bottom 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation-delay: 0.6s;
 }
 
 .modal-icons{
@@ -55,6 +60,9 @@
     gap: 1vw;
     padding-left: 1.3rem;
     padding-top: 1rem;
+
+    animation: scale-in-ver-bottom 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation-delay: 1s;
 }
 
 .modal-icons a{
