@@ -6,7 +6,7 @@
                     <div class="projLeftContent">
                         <h1 id="scale-in-ver-bottom">View my Projects,</h1>
                         <p id="scale-in-ver-bottom">
-                            View the different projects by clicking the button below.
+                            View my different projects below.
                         </p>
                         <button v-on:click="projectsRoute()">View</button>
                     </div>
@@ -15,7 +15,7 @@
                     <div class="projRightContent">
                         <h1 id="scale-in-ver-bottom">GitHub,</h1>
                         <p id="scale-in-ver-bottom">
-                            Take a look at my commits and repositories on GitHub.
+                            Take a look at my repositories on GitHub.
                         </p>
                         <a target="_blank" href="https://github.com/samlkey">
                             <button>View</button>
@@ -32,7 +32,7 @@
         name: "Projects",
         methods : {
             projectsRoute : function(){
-                this.$router.push('/projects')
+                window.location.href = '/projects';
             }
         }
     }

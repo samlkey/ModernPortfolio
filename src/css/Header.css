@@ -5,7 +5,6 @@
     justify-content: right;
     position: fixed;
     top: 0;
-    right: 0;
     margin-top: 5vh;
 }
 
@@ -25,16 +24,15 @@
     fill: var(--text-colour);
 }
 
-
-
 .header-icons-burger{
     width: 2.9rem;
     height: auto;
     stroke: var(--text-colour);
+    cursor: pointer;
 }
 
 /* MOBILE */
-@media only screen and (max-width: 600px) {
+@media (max-width: 600px), (orientation: portrait) {
     .header{
         margin-top: 2.5vh;
     }

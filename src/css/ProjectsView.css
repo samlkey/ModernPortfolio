@@ -4,7 +4,7 @@
     display: flex;
     justify-content: center;
     color: var(--text-colour);
-    width: 100vw;
+    width: 100%;
 }
 
 .projects-title {
@@ -20,6 +20,8 @@
 
 .projects-title p {
     font-weight: normal;
+    width: 30vw;
+    margin: 3vh auto 0 auto;
 }
 
 .projectblock-container {
@@ -38,8 +40,11 @@
 
 .img-holder{
     background-color: var(--secondary-colour);
-    width: 500px;
-    height: 500px;
+    width: 30vw;
+    aspect-ratio: 1 / 1;
+    max-width: 400px;
+    min-width: 100px;
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -59,25 +64,24 @@
     display: flex;
     margin-left: 5vw;
     margin-top: 10vh;
-    margin-bottom: 10vh;
+    margin-bottom: 20vh;
 }
 
 
 .proj-name{
-    left: -4rem;
+    left: -3.5rem;
     position: relative;
-    top: 5rem;
+    top: 3.5rem;
     height: fit-content;
     padding: 1rem;
     z-index: 9999999;
     font-size: 1rem;
     margin: 0;
+    width: 80%;
 }
 
 .proj-name div{
-    border-bottom: 2px solid red;
     width: 10vw;
-    margin-bottom: 10%;
 }
 
 .proj-name p{
@@ -88,6 +92,7 @@
 a{
     text-decoration: none;
     color: inherit;
+    width: 60%;
 }
 
 .proj-name div p{
@@ -96,8 +101,25 @@ a{
     font-weight: bold;
 }
 
+.proj-link a div button{
+    font-size: 12px; 
+    border: 1px solid var(--text-colour);
+    width: 15vw;
+    height: 5vh;
+    background-color: var(--primary-colour);
+    color: var(--text-colour);
+    font-weight: bold;
+    border-radius: 0;
+    transition: transform 0.3s ease-in-out;
+}
+
+.proj-link a div button:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
 /* MOBILE */
-@media only screen and (max-width: 700px) {
+@media (max-width: 600px), (orientation: portrait) {
     .projects-title {
         font-size: 1.8vh;
     }    
@@ -109,7 +131,7 @@ a{
 
     .proj-left{
         flex-direction: column;
-        width: 80vw;
+        margin-bottom: 10vh;
     }
     
     .proj-name {
@@ -121,6 +143,7 @@ a{
 
     .proj-name h1{
         font-size: 1.5rem;
+        width: 70vw;
     }
 
     .proj-name p{
@@ -130,16 +153,19 @@ a{
     }
 
     .img-holder img{
-        width: 30vw;
+        width: 150px;
     }    
 
     .proj-link {
         display: flex;
-        gap: 15vw;
+        gap: 23vw;
+        margin-top: 2vh;
     }
 
-    .proj-link div p {
-        font-size: 1rem;
+    .proj-link a div button{
+        height: 3vh;
+        width: 25vw;
+        font-size: 10px;
     }
 
     .project-wrapper {

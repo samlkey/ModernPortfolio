@@ -14,6 +14,7 @@
 
 .langwrap{
     display: flex;
+    gap: 2vw;
 }
 
 .langflavour{
@@ -34,6 +35,7 @@
 
 .lang-right div{
     margin-top: 2vh;
+    
 }
 
 .lang-block{
@@ -52,7 +54,7 @@
     margin: 0;
 }
 
-@media only screen and (max-width: 600px) {
+@media (max-width: 600px), (orientation: portrait) {
     .lang-title h1{
         font-size: 3em;
     }

@@ -1,4 +1,5 @@
 <template>
+  <div>
     <div class="main" id="top">
       <div class="content">
         <Home></Home>
@@ -10,6 +11,7 @@
       </div>
     </div>
     <ScrollBar ref="childRef"></ScrollBar>
+  </div>
   </template>
   
   <script> 

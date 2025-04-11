@@ -2,9 +2,7 @@
   <div class="main" id="top" :class="mode" >
     <Header :mode="mode" @toggle="toggle"></Header>
     <div class="content" :class="{ 'no-overflow': $route.meta.hideOverflow }">
-      <transition name="fade" mode="out-in">
-        <RouterView></RouterView>
-      </transition>
+      <RouterView></RouterView>
     </div>
   </div>
 </template>
@@ -52,6 +50,12 @@
       onMounted(() => {
         router.afterEach((to) => {
           document.body.style.overflow = to.meta.hideOverflow ? 'hidden' : 'auto'
+
+          window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: 'smooth', // Optional: smooth scroll
+          });
         })
       })
     }

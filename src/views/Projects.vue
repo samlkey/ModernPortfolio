@@ -3,7 +3,7 @@
         <div class="project-wrapper">
             <div class="projects-title">
                 <h1>/Projects</h1>
-                <p>Projects I have completed in the past.</p>
+                <p>Feel free to take a look at some of the projects. Some of these are still work in progress.</p>
             </div>
 
             <div class="proj-left">
@@ -22,12 +22,12 @@
                     <div class="proj-link">
                         <a target="_blank" href="https://www.linkedin.com/in/samkey726/"> 
                             <div>
-                                <p>View App</p>
+                                <button>View App</button>
                             </div>
                         </a>
                         <a target="_blank" href="https://www.linkedin.com/in/samkey726/"> 
                             <div>
-                                <p>Learn More</p>
+                                <button>Learn More</button>
                             </div>
                         </a>
                     </div>
@@ -51,7 +51,7 @@
                     <div class="proj-link">
                         <a target="_blank" href="https://www.linkedin.com/in/samkey726/"> 
                             <div>
-                                <p>Learn More</p>
+                                <button>Learn More</button>
                             </div>
                         </a>
                     </div>

@@ -11,7 +11,7 @@
 
             <div class="langwrap">
                 <div class="lang-right">
-                    <h1>Language</h1>
+   
                     <div class="lang-block">
                         <LangBlock language="JavaScript" url="https://img.icons8.com/?size=100&id=108784&format=png&color=000000"/>
                         <LangBlock language="C#" url="https://img.icons8.com/color/48/c-sharp-logo.png"/>
@@ -26,10 +26,10 @@
                 </div>
 
                 <div class="lang-right">
-                    <h1>Software</h1>
+
                     <div class="lang-block">
-                        <LangBlock language="Blazor" url="https://img.icons8.com/?size=100&id=108784&format=png&color=000000"/>
-                        <LangBlock language="ASP.NET" url="https://img.icons8.com/color/48/c-sharp-logo.png"/>
+                        <LangBlock language="CSS3" url="https://img.icons8.com/color/48/css3.png"/>
+                        <LangBlock language="TypeScript" url="https://img.icons8.com/color/48/typescript.png"/>
                         <LangBlock language=".NET" url="https://img.icons8.com/color/48/net-framework.png"/>          
                     </div>
 
@@ -41,10 +41,10 @@
                 </div>
 
                 <div class="lang-right">
-                    <h1>Frameworks</h1>
+
                     <div class="lang-block">
-                        <LangBlock language="Express.js" url="https://img.icons8.com/office/40/express-js.png"/>
-                        <LangBlock language="jQuery" url="https://img.icons8.com/deco/48/jquery.png"/>
+                        <LangBlock language="Visual Studio" url="https://img.icons8.com/color/48/visual-studio--v2.png"/>
+                        <LangBlock language="Git" url="https://img.icons8.com/color/48/git.png"/>
                         <LangBlock language="Flask" url="https://img.icons8.com/nolan/64/flask.png"/>          
                     </div>
 

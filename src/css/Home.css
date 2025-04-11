@@ -84,7 +84,7 @@ button:hover {
 }
 
 /* MOBILE */
-@media only screen and (max-width: 600px) {
+@media (max-width: 600px), (orientation: portrait) {
     .home-backdrop {
         flex-direction: column;
         height: auto; /* Allow height to adjust based on content */
