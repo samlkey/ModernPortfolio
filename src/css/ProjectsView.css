@@ -42,7 +42,7 @@
     background-color: var(--secondary-colour);
     width: 30vw;
     aspect-ratio: 1 / 1;
-    max-width: 400px;
+    max-width: 500px;
     min-width: 100px;
     
     display: flex;

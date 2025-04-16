@@ -4,10 +4,9 @@
             <div class="footerTop" id="scale-in-ver-bottom-delay">
                 <div class="topFlex">
                     <div>
-                        <p @click="scrollToLocation('aboutMe')">About Me</p>
-                        <p @click="scrollToLocation('languageScroll')">Experience</p>
-                        <p @click="scrollToLocation('projectScroll')">Projects</p>
-                        <p v-on:click="openCV()">My Resume</p>
+                        <p @click="hrefChange('/')">Home</p>
+                        <p @click="hrefChange('/projects')">My Projects</p>
+                        <p @click="hrefChange('/resume')">My Resume</p>
                     </div>
                 </div>
             </div>
@@ -37,20 +36,14 @@ export default {
     name: 'Footer',
     methods: {
         //breaks scrollBar, need to accomadate this. 
-        scrollToLocation : function(loc){
-            document.getElementById(loc).scrollIntoView({ 
-                behavior: "smooth", 
-                block: "start" 
-            });
-
-            this.$emit("pageChange", loc)
-        },
         openCV : function(){
             window.open('/files/CV.pdf')
         },
+        hrefChange : function(loc){
+            window.location.href = loc;
+        }
     },
 }
 </script>
-
 
 <style src="../css/Footer.css" />

@@ -7,10 +7,9 @@
                 </div>
 
                 <div class="modal-links">
-                    <p @click="scrollToLocation('aboutMe')">About Me</p>
-                    <p @click="scrollToLocation('languageScroll')">Experience</p>
-                    <p @click="scrollToLocation('projectScroll')">Projects</p>
-                    <p v-on:click="openCV()">My Resume</p>
+                    <p @click="hrefChange('/')">Home</p>
+                    <p @click="hrefChange('/projects')">My Projects</p>
+                    <p v-on:click="hrefChange('/resume')">My Resume</p>
                 </div>
 
                 <div class="modal-contact">
@@ -32,57 +31,22 @@
     </div>    
 </template>
 <script setup>
-    import { defineProps, defineEmits, watch, onUnmounted } from 'vue'
+    import { defineProps, defineEmits } from 'vue'
 
     // eslint-disable-next-line no-unused-vars
     const props = defineProps({
       visible: Boolean
     })
 
-    const scrollToLocation = function(loc){
-        if (isMobile()) enableScroll()
-        document.getElementById(loc).scrollIntoView({ 
-            behavior: "smooth", 
-            block: "start" 
-        });
-        if (isMobile()) emit('close')
+    const hrefChange = function(loc){
+        window.location.href = loc;
     }
 
-    const openCV = function(){
-        window.open('/files/CV.pdf')
-    }
+    // const openCV = function(){
+    //     window.open('/files/CV.pdf')
+    // }
 
     const emit = defineEmits(['close'])
-
-    const isMobile = () => window.innerWidth <= 768
-
-    const disableScroll = () => {
-        const scrollY = window.scrollY
-        document.body.classList.add('no-scroll')
-        document.body.style.top = `-${scrollY}px`
-        document.body.dataset.scrollY = scrollY
-    }
-
-    const enableScroll = () => {
-        document.body.classList.remove('no-scroll')
-        document.body.style.top = ''
-        delete document.body.dataset.scrollY
-    }
-
-    watch(() => props.visible, (newVal) => {
-        if (isMobile()) {
-            if (newVal) {
-                disableScroll()
-            } 
-            else {
-                enableScroll()
-            }
-        }
-    })
-
-    onUnmounted(() => {
-        enableScroll()
-    })
 
     // eslint-disable-next-line no-unused-vars
     function close() {

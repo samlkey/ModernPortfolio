@@ -38,6 +38,9 @@ div{
   --secondary-colour: #d0d7e4;
   --text-colour: #0f1215;
   --indent-colour: #f9fafb;
+  
+  --textaccent-colour: #45484d;
+  --textfade-colour: #4b4d4e;
 
   
 
@@ -51,6 +54,8 @@ div{
   --secondary-colour: #111a29;
   --text-colour: #eaedf0;
   --indent-colour: #ffffff0a;
+  --textaccent-colour: #415f96;
+  --textfade-colour: #aeb1b4;
 
   
   transition: background 0.3s ease-in-out;

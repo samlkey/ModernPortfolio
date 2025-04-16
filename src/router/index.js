@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Landing from '../components/Landing.vue'
 import Projects from '../views/Projects.vue'
+import Resume from '../views/Resume.vue'
 
 const routes = [
   {
@@ -13,6 +14,12 @@ const routes = [
     path: "/projects",
     name: 'projects',
     component: Projects,
+    meta: { hideOverflow: false }
+  },
+  {
+    path: "/resume",
+    name: "resume",
+    component: Resume,
     meta: { hideOverflow: false }
   }
 

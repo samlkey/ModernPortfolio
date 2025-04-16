@@ -23,7 +23,7 @@
         name: "Home",
         methods : {
             openCV : function(){
-                window.open('/files/CV.pdf')
+                window.location.href = "/resume"
             },
             scrollHandler : function(target){
                 document.getElementById(target).scrollIntoView()
