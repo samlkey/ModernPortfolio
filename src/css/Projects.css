@@ -50,6 +50,16 @@
     width: 100%;
 }
 
+.projRightContent div p {
+    margin: 0;
+    height: 20vh;
+}
+
+.projLeftContent div p {
+    margin: 0;
+    height: 20vh;
+}
+
 .projContent button {
     font-size: 15px; 
     border: 1px solid var(--text-colour);

@@ -62,9 +62,7 @@
                             </div>
                             <div>
                                 <h1>
-                                    Networking & 
-                                    <br>
-                                    Server Management
+                                    Networking
                                 </h1>
                                 <ul>
                                     <li>Linux</li>

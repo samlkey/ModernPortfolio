@@ -14,9 +14,6 @@
 
     <Modal :visible="showModal" @close="showModal = false"></Modal>
   </div>
-
-
-
 </template>
 
 <script>

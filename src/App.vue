@@ -18,7 +18,7 @@
     name: 'App',
     data() {
       return {
-        mode: 'dark'
+        mode: localStorage.getItem('theme')
       }
     },
     components: {
@@ -34,9 +34,11 @@
       toggle () {
         if (this.mode === "dark"){
           this.mode = "light"
+          localStorage.setItem('theme', 'light')
         }
         else{
           this.mode = "dark"
+          localStorage.setItem('theme', 'dark')
         }
       }
     },
@@ -58,6 +60,17 @@
           });
         })
       })
+    },
+    created() {
+      if (!localStorage.getItem('theme')){
+        localStorage.setItem('theme', 'dark');
+
+        // Optional: only reload if you actually need it (e.g., if theme affects initial render)
+        if (!sessionStorage.getItem('theme')) {
+          sessionStorage.setItem('theme-initialized', 'true');
+          this.toggle();
+        }
+      }
     }
   }
 </script>

@@ -31,7 +31,7 @@
     </div>    
 </template>
 <script setup>
-    import { defineProps, defineEmits } from 'vue'
+    import { defineProps, defineEmits, watch, onUnmounted } from 'vue'
 
     // eslint-disable-next-line no-unused-vars
     const props = defineProps({
@@ -42,9 +42,38 @@
         window.location.href = loc;
     }
 
-    // const openCV = function(){
-    //     window.open('/files/CV.pdf')
-    // }
+    const isMobile = () => window.innerWidth <= 768
+ 
+    const disableScroll = () => {
+        const scrollY = window.scrollY
+        document.body.classList.add('no-scroll')
+        document.body.style.top = `-${scrollY}px`
+        document.body.dataset.scrollY = scrollY
+    }
+ 
+    const enableScroll = () => {
+        const scrollY = document.body.dataset.scrollY
+        document.body.classList.remove('no-scroll')
+        document.body.style.top = ''
+        window.scrollTo(0, parseInt(scrollY || '0'))
+        delete document.body.dataset.scrollY
+    }
+
+    watch(() => props.visible, (newVal) => {
+        if (isMobile()) {
+            if (newVal) {
+                disableScroll()
+            } 
+ 
+            else {
+                enableScroll()
+            }
+        }
+    })
+ 
+    onUnmounted(() => {
+        enableScroll()
+    })
 
     const emit = defineEmits(['close'])
 

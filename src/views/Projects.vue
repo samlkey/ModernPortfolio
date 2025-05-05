@@ -7,7 +7,7 @@
             </div>
 
             <div class="proj-left">
-                <a target="_blank" href="https://www.linkedin.com/in/samkey726/"> 
+                <a target="_blank" href="https://samlkey.github.io/Wordle-Clone/"> 
                     <div class="img-holder">
                         <img src="@/assets/WordleCap.png">
                     </div>
@@ -20,12 +20,12 @@
                     </p>
 
                     <div class="proj-link">
-                        <a target="_blank" href="https://www.linkedin.com/in/samkey726/"> 
+                        <a target="_blank" href="https://samlkey.github.io/Wordle-Clone/"> 
                             <div>
                                 <button>View App</button>
                             </div>
                         </a>
-                        <a target="_blank" href="https://www.linkedin.com/in/samkey726/"> 
+                        <a target="_blank" href="https://github.com/samlkey/Wordle-Clone"> 
                             <div>
                                 <button>Learn More</button>
                             </div>
@@ -35,7 +35,7 @@
             </div>
 
             <div class="proj-left">
-                <a target="_blank" href="https://www.linkedin.com/in/samkey726/"> 
+                <a target="_blank" href="https://github.com/samlkey/pyClean"> 
                     <div class="img-holder">
                         <img src="@/assets/pyClean.png">
                     </div>
@@ -49,7 +49,7 @@
                     </p>
 
                     <div class="proj-link">
-                        <a target="_blank" href="https://www.linkedin.com/in/samkey726/"> 
+                        <a target="_blank" href="https://github.com/samlkey/pyClean"> 
                             <div>
                                 <button>Learn More</button>
                             </div>

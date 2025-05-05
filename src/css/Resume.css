@@ -48,10 +48,12 @@
 
 .resume-side {
     width: 25%;
+    order: 0;
 }
 
 .resume-main {
     width: 75%;
+    order: 1;
 }
 
 .resume-opening h1{
@@ -215,7 +217,7 @@ a{
     }
 
     .resume-main-content{
-        display: block;
+        flex-direction: column;
         padding: 0;
     }
 
@@ -242,6 +244,10 @@ a{
 
     .skill-single {
         width: 80vw;
+    }
+
+    .resume-opening h1 {
+        font-size: 6rem;
     }
 
     .resume-opening h2 {
@@ -273,7 +279,6 @@ a{
     .exp-block-result p {
         width: 85vw;
         font-size: 1.2em;
-        margin-bottom: 2vh;
     }
 
     .proj-flavour{
@@ -282,10 +287,28 @@ a{
 
     .exp-block-result ul {
         width: 85vw;
+        padding-left: 3.5vw;
     }
 
     .exp-block-result ul li{
         margin-bottom: 3vh;
+    }
+
+    .resume-side {
+        order: 2;
+    }
+
+    .bottom {
+        padding: 0;
+    }
+
+    .resume-main {
+        order: 1;
+        margin-top: 5vh;
+    }
+
+    .bottom {
+        border-bottom: 1px solid var(--text-colour)
     }
 }
 
