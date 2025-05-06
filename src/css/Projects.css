@@ -84,6 +84,14 @@
         border-right: none;
         padding: 1rem;
     }
+
+    .projLeftContent div p{
+        height: 10vh;
+    }
+
+    .projRightContent div p{
+        height: 10vh;
+    }
 }
 
 @media only screen and (max-width: 600px) {

@@ -38,6 +38,11 @@
     width: 50%;
 }
 
+.clipart-image {
+    width: 40vh;
+    height: auto;
+}
+
 @media (max-width: 600px), (orientation: portrait) {
     .aboutMe {
         height: 100vh;
@@ -93,7 +98,13 @@
         align-items: center;
         justify-content: center;
     }
+    
     .lang-wrapper svg{
         height: 20vh;
+    }
+
+    .clipart-image {
+        width: 25vh;
+        height: auto;
     }
 }

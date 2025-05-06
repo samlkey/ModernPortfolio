@@ -27,11 +27,9 @@
     cursor: pointer;
 }
 
-
 .footerIcons {
     display: flex;
     gap: 5%;
-    width: 80vw;
     padding-top: 3%;
 }
 
@@ -85,7 +83,6 @@
 
     .footerIcons {
         flex-direction: column;
-        gap: 10%;
         padding-top: 5vh;
     }
 
@@ -96,7 +93,7 @@
     .icons {
         justify-content: center;
         width: 100%;
-        gap: 15%;
+        gap: 5%;
     }
 
     .icons div {

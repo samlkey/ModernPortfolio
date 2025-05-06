@@ -15,7 +15,7 @@
 }
 
 .home-backdrop-content {
-    width: 40rem;
+    width: 35rem;
     max-width: 100%; /* Ensures content is responsive */
     padding: 0 1rem; /* Adds padding for smaller screens */
 }
@@ -42,8 +42,12 @@
 }
 
 .home-backdrop-emoji {
-    width: 20rem;
+    width: 30vh;
     height: auto;
+    background-color: var(--indent-colour);
+    border-radius: 50%;
+    padding: 10% 10% 10% 10%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 button {
@@ -109,8 +113,17 @@ button:hover {
         padding-bottom: 2rem;
     }
 
+    .img-handle{
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     .home-backdrop-emoji {
-        display: none;
+        width: 15vh;
+        height: auto;
+        margin-top: 5vh;
     }
 
     .home-arrow {

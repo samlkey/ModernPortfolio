@@ -11,7 +11,7 @@
                     <button v-on:click="openCV()" download>View my Resume!</button>
                 </div>
             </div>
-            <div>
+            <div class="img-handle">
                 <img class="home-backdrop-emoji" src="../assets/emoji.png" />
             </div>
         </div>
