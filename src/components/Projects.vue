@@ -7,7 +7,7 @@
                         <div>
                             <h1 id="scale-in-ver-bottom">View my Projects,</h1>
                             <p id="scale-in-ver-bottom">
-                                View my different projects below.
+                                Click on the button below to view my different projects below.
                             </p>
                         </div>
                         <div>

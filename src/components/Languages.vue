@@ -6,7 +6,7 @@
             </div>
 
             <p class="langflavour">
-                Proven ability to lead projects, develop business-critical systems, and solve complex technical challenges. Always eager to learn and apply cutting-edge technologies to enhance efficiency and performance.
+                full stack developer with a broad and versatile skill set, experienced in working across both front-end and back-end technologies. I have a strong command of multiple programming languages, allowing me to adapt to diverse projects and technology stacks.
             </p>
 
             <div class="langwrap">

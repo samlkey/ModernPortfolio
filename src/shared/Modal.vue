@@ -7,13 +7,13 @@
                 </div>
 
                 <div class="modal-links">
-                    <p @click="hrefChange('/')">Home</p>
-                    <p @click="hrefChange('/projects')">My Projects</p>
-                    <p v-on:click="hrefChange('/resume')">My Resume</p>
+                    <p class="after-sel" @click="hrefChange('/')">Home</p>
+                    <p class="after-sel" @click="hrefChange('/projects')">My Projects</p>
+                    <p class="after-sel" v-on:click="hrefChange('/resume')">My Resume</p>
                 </div>
 
                 <div class="modal-contact">
-                    <p>sam@email.com</p>
+                    <p class="after-sel">sam@email.com</p>
                 </div>
 
                 <div class="modal-icons">

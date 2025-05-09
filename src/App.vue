@@ -12,7 +12,7 @@
   import { onMounted } from 'vue'
   import Header from './components/Header.vue'
   import { BANNER_CONTENT } from './static/constants'
-  document.title = "Sam Key's Resume"
+  document.title = "Sam Key | Full Stack Developer"
 
   export default {
     name: 'App',

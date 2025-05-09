@@ -15,7 +15,7 @@
 }
 
 .home-backdrop-content {
-    width: 35rem;
+    width: 40rem;
     max-width: 100%; /* Ensures content is responsive */
     padding: 0 1rem; /* Adds padding for smaller screens */
 }

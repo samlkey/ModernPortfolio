@@ -61,7 +61,7 @@
 }
 
 .projContent button {
-    font-size: 15px; 
+    font-size: 20px; 
     border: 1px solid var(--text-colour);
     width: 18vw;
     height: 7vh;
@@ -69,6 +69,12 @@
     color: var(--text-colour);
     font-weight: bold;
     border-radius: 0;
+    transition: transform 0.3s ease-in-out;
+}
+
+.projContent button:hover{
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
 @media (max-width: 600px), (orientation: portrait) {
