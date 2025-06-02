@@ -10,7 +10,6 @@
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
     "core-js": "^3.8.3",
-    "emailjs": "^4.0.1",
     "jquery": "^3.7.1",
     "jquery-ui": "^1.13.3",
     "vue": "^3.2.13",

@@ -82,5 +82,4 @@
       emit('close')
     }
 </script>
-
 <style src="../css/Modal.css" />
