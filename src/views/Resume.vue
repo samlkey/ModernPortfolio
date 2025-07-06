@@ -152,7 +152,7 @@
                         <h1>Experience</h1>
                         <div class="qual-block">
                             <div class="qual-block-title">
-                                <h2>2nd Line Software Engineer</h2>
+                                <h2>Software Engineer</h2>
                                 <h2 class="qual-block-flavour">July 2023 – Present</h2>    
                             </div>
 

@@ -61,6 +61,36 @@
                     </div>  
                 </div>
             </div>
+
+            <div class="proj-left">
+                <div class="proj-leftcontent">
+                    <a target="_blank" href="https://samlkey.github.io/MobHighLow/"> 
+                        <div class="img-holder">
+                            <img src="@/assets/gameScreenshot.png">
+                        </div>
+                    </a>
+                
+                    <div class="proj-name">
+                        <h1>MobHighLow</h1>
+                        <p>
+                            A React based guessing game for Old School Runescape, uses an express.js backend and the OSRS wiki for gathering information.
+                        </p>
+                    
+                        <div class="proj-link">
+                            <a target="_blank" href="https://samlkey.github.io/MobHighLow/"> 
+                                <div>
+                                    <button>View App</button>
+                                </div>
+                            </a>
+                            <a target="_blank" href="https://github.com/samlkey/MobHighLow"> 
+                                <div>
+                                    <button>Learn More</button>
+                                </div>
+                            </a>
+                        </div>
+                    </div>  
+                </div>
+            </div>
         </div>
     </div>
     
